@@ -1,4 +1,4 @@
-import psycopg2
+#import psycopg2
 from flask import Flask, render_template, url_for, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
@@ -32,6 +32,7 @@ def index():
                 return 'There was an issue adding your task'
             
         elif request.form['submit_button'] == 'Test DB':
+"""
             conn = psycopg2.connect(
                     host="ec2-52-22-136-117.compute-1.amazonaws.com",
                     database="d2f0gk8obcb2i7",
@@ -73,6 +74,7 @@ def index():
 
             cur.close()
             conn.close()
+"""
         else:
             pass # unknown
         
