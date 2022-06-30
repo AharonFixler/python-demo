@@ -71,7 +71,7 @@ def index():
             conn.commit()
 
             cur.close()
-                conn.close()
+            conn.close()
         else:
             pass # unknown
         
