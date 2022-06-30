@@ -77,8 +77,7 @@ def index():
             conn.close()
 """
         else:
-            pass # unknown
-        
+            pass # unknown 
        
 
     else:
