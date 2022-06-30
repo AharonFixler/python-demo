@@ -32,6 +32,7 @@ def index():
                 return 'There was an issue adding your task'
             
         elif request.form['submit_button'] == 'Test DB':
+            pass
 """
             conn = psycopg2.connect(
                     host="ec2-52-22-136-117.compute-1.amazonaws.com",
