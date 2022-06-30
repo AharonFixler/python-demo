@@ -15,13 +15,7 @@ class Todo(db.Model):
 
     def __repr__(self):
         return '<Task %r>' % self.id
-
-def contact():
-    if request.method == 'POST':
-        
-    elif request.method == 'GET':
-        return render_template('contact.html', form=form)
-    
+   
 @app.route('/', methods=['POST', 'GET'])
 def index():
     if request.method == 'POST':
